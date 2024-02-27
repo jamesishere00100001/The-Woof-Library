@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD03D60A2B8615CC000867FA /* The_Woof_LibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03D6092B8615CC000867FA /* The_Woof_LibraryApp.swift */; };
+		DD03D60C2B8615CC000867FA /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03D60B2B8615CC000867FA /* ListView.swift */; };
+		DD03D60E2B8615D0000867FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD03D60D2B8615D0000867FA /* Assets.xcassets */; };
+		DD03D6112B8615D0000867FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD03D6102B8615D0000867FA /* Preview Assets.xcassets */; };
+		DD03D6182B861623000867FA /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DD03D6172B861623000867FA /* ReadMe.rtf */; };
+		DD03D61A2B861684000867FA /* DogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03D6192B861684000867FA /* DogView.swift */; };
+		DD03D61F2B861715000867FA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD03D61E2B861715000867FA /* Models.swift */; };
+		DD9EA0D52B87B33800BDD706 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EA0D42B87B33800BDD706 /* ImageView.swift */; };
+		DD9EA0D72B88FAF000BDD706 /* DogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EA0D62B88FAF000BDD706 /* DogDetailView.swift */; };
+		DD9EA0F22B8B933F00BDD706 /* The_Woof_LibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EA0F12B8B933F00BDD706 /* The_Woof_LibraryUITests.swift */; };
+		DD9EA0F42B8B933F00BDD706 /* The_Woof_LibraryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EA0F32B8B933F00BDD706 /* The_Woof_LibraryUITestsLaunchTests.swift */; };
+		DD9EA0FC2B8B935F00BDD706 /* The_Woof_LibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9EA0FB2B8B935E00BDD706 /* The_Woof_LibraryTests.swift */; };
+		DDBF487C2B8D0EA1000BB17E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBF487B2B8D0EA1000BB17E /* Networking.swift */; };
+		DDBF487E2B8D11CE000BB17E /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBF487D2B8D11CE000BB17E /* Methods.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD9EA0E32B8B925600BDD706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD03D5FE2B8615CC000867FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD03D6052B8615CC000867FA;
+			remoteInfo = "The Woof Library";
+		};
+		DD9EA0F52B8B933F00BDD706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD03D5FE2B8615CC000867FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD03D6052B8615CC000867FA;
+			remoteInfo = "The Woof Library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD03D6062B8615CC000867FA /* The Woof Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Woof Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD03D6092B8615CC000867FA /* The_Woof_LibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Woof_LibraryApp.swift; sourceTree = "<group>"; };
+		DD03D60B2B8615CC000867FA /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		DD03D60D2B8615D0000867FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD03D6102B8615D0000867FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD03D6172B861623000867FA /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		DD03D6192B861684000867FA /* DogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogView.swift; sourceTree = "<group>"; };
+		DD03D61E2B861715000867FA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		DD9EA0D42B87B33800BDD706 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		DD9EA0D62B88FAF000BDD706 /* DogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailView.swift; sourceTree = "<group>"; };
+		DD9EA0DF2B8B925600BDD706 /* The Woof LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Woof LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9EA0EF2B8B933F00BDD706 /* The Woof LibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Woof LibraryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9EA0F12B8B933F00BDD706 /* The_Woof_LibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Woof_LibraryUITests.swift; sourceTree = "<group>"; };
+		DD9EA0F32B8B933F00BDD706 /* The_Woof_LibraryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Woof_LibraryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD9EA0FB2B8B935E00BDD706 /* The_Woof_LibraryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = The_Woof_LibraryTests.swift; sourceTree = "<group>"; };
+		DDBF487B2B8D0EA1000BB17E /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		DDBF487D2B8D11CE000BB17E /* Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD03D6032B8615CC000867FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9EA0DC2B8B925600BDD706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9EA0EC2B8B933F00BDD706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD03D5FD2B8615CC000867FA = {
+			isa = PBXGroup;
+			children = (
+				DD03D6082B8615CC000867FA /* The Woof Library */,
+				DD9EA0E02B8B925600BDD706 /* The Woof LibraryTests */,
+				DD9EA0F02B8B933F00BDD706 /* The Woof LibraryUITests */,
+				DD03D6072B8615CC000867FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD03D6072B8615CC000867FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD03D6062B8615CC000867FA /* The Woof Library.app */,
+				DD9EA0DF2B8B925600BDD706 /* The Woof LibraryTests.xctest */,
+				DD9EA0EF2B8B933F00BDD706 /* The Woof LibraryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD03D6082B8615CC000867FA /* The Woof Library */ = {
+			isa = PBXGroup;
+			children = (
+				DD03D6172B861623000867FA /* ReadMe.rtf */,
+				DD03D6092B8615CC000867FA /* The_Woof_LibraryApp.swift */,
+				DD03D61C2B8616EA000867FA /* Models */,
+				DD03D61B2B8616CA000867FA /* View */,
+				DD03D61D2B8616FD000867FA /* ViewModel */,
+				DD03D60D2B8615D0000867FA /* Assets.xcassets */,
+				DD03D60F2B8615D0000867FA /* Preview Content */,
+			);
+			path = "The Woof Library";
+			sourceTree = "<group>";
+		};
+		DD03D60F2B8615D0000867FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD03D6102B8615D0000867FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD03D61B2B8616CA000867FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD03D60B2B8615CC000867FA /* ListView.swift */,
+				DD03D6192B861684000867FA /* DogView.swift */,
+				DD9EA0D42B87B33800BDD706 /* ImageView.swift */,
+				DD9EA0D62B88FAF000BDD706 /* DogDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD03D61C2B8616EA000867FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD03D61E2B861715000867FA /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD03D61D2B8616FD000867FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDBF487B2B8D0EA1000BB17E /* Networking.swift */,
+				DDBF487D2B8D11CE000BB17E /* Methods.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD9EA0E02B8B925600BDD706 /* The Woof LibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9EA0FB2B8B935E00BDD706 /* The_Woof_LibraryTests.swift */,
+			);
+			path = "The Woof LibraryTests";
+			sourceTree = "<group>";
+		};
+		DD9EA0F02B8B933F00BDD706 /* The Woof LibraryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD9EA0F12B8B933F00BDD706 /* The_Woof_LibraryUITests.swift */,
+				DD9EA0F32B8B933F00BDD706 /* The_Woof_LibraryUITestsLaunchTests.swift */,
+			);
+			path = "The Woof LibraryUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD03D6052B8615CC000867FA /* The Woof Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD03D6142B8615D0000867FA /* Build configuration list for PBXNativeTarget "The Woof Library" */;
+			buildPhases = (
+				DD03D6022B8615CC000867FA /* Sources */,
+				DD03D6032B8615CC000867FA /* Frameworks */,
+				DD03D6042B8615CC000867FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Woof Library";
+			productName = "The Woof Library";
+			productReference = DD03D6062B8615CC000867FA /* The Woof Library.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD9EA0DE2B8B925600BDD706 /* The Woof LibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9EA0E52B8B925600BDD706 /* Build configuration list for PBXNativeTarget "The Woof LibraryTests" */;
+			buildPhases = (
+				DD9EA0DB2B8B925600BDD706 /* Sources */,
+				DD9EA0DC2B8B925600BDD706 /* Frameworks */,
+				DD9EA0DD2B8B925600BDD706 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9EA0E42B8B925600BDD706 /* PBXTargetDependency */,
+			);
+			name = "The Woof LibraryTests";
+			productName = "The Woof LibraryTests";
+			productReference = DD9EA0DF2B8B925600BDD706 /* The Woof LibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD9EA0EE2B8B933F00BDD706 /* The Woof LibraryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9EA0F72B8B933F00BDD706 /* Build configuration list for PBXNativeTarget "The Woof LibraryUITests" */;
+			buildPhases = (
+				DD9EA0EB2B8B933F00BDD706 /* Sources */,
+				DD9EA0EC2B8B933F00BDD706 /* Frameworks */,
+				DD9EA0ED2B8B933F00BDD706 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD9EA0F62B8B933F00BDD706 /* PBXTargetDependency */,
+			);
+			name = "The Woof LibraryUITests";
+			productName = "The Woof LibraryUITests";
+			productReference = DD9EA0EF2B8B933F00BDD706 /* The Woof LibraryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD03D5FE2B8615CC000867FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					DD03D6052B8615CC000867FA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					DD9EA0DE2B8B925600BDD706 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DD03D6052B8615CC000867FA;
+					};
+					DD9EA0EE2B8B933F00BDD706 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DD03D6052B8615CC000867FA;
+					};
+				};
+			};
+			buildConfigurationList = DD03D6012B8615CC000867FA /* Build configuration list for PBXProject "The Woof Library" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD03D5FD2B8615CC000867FA;
+			productRefGroup = DD03D6072B8615CC000867FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD03D6052B8615CC000867FA /* The Woof Library */,
+				DD9EA0DE2B8B925600BDD706 /* The Woof LibraryTests */,
+				DD9EA0EE2B8B933F00BDD706 /* The Woof LibraryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD03D6042B8615CC000867FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD03D6112B8615D0000867FA /* Preview Assets.xcassets in Resources */,
+				DD03D6182B861623000867FA /* ReadMe.rtf in Resources */,
+				DD03D60E2B8615D0000867FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9EA0DD2B8B925600BDD706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9EA0ED2B8B933F00BDD706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD03D6022B8615CC000867FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9EA0D72B88FAF000BDD706 /* DogDetailView.swift in Sources */,
+				DD03D61F2B861715000867FA /* Models.swift in Sources */,
+				DD03D60C2B8615CC000867FA /* ListView.swift in Sources */,
+				DD03D61A2B861684000867FA /* DogView.swift in Sources */,
+				DDBF487E2B8D11CE000BB17E /* Methods.swift in Sources */,
+				DD03D60A2B8615CC000867FA /* The_Woof_LibraryApp.swift in Sources */,
+				DD9EA0D52B87B33800BDD706 /* ImageView.swift in Sources */,
+				DDBF487C2B8D0EA1000BB17E /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9EA0DB2B8B925600BDD706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9EA0FC2B8B935F00BDD706 /* The_Woof_LibraryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9EA0EB2B8B933F00BDD706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9EA0F22B8B933F00BDD706 /* The_Woof_LibraryUITests.swift in Sources */,
+				DD9EA0F42B8B933F00BDD706 /* The_Woof_LibraryUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD9EA0E42B8B925600BDD706 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD03D6052B8615CC000867FA /* The Woof Library */;
+			targetProxy = DD9EA0E32B8B925600BDD706 /* PBXContainerItemProxy */;
+		};
+		DD9EA0F62B8B933F00BDD706 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD03D6052B8615CC000867FA /* The Woof Library */;
+			targetProxy = DD9EA0F52B8B933F00BDD706 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD03D6122B8615D0000867FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD03D6132B8615D0000867FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD03D6152B8615D0000867FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Woof Library/Preview Content\"";
+				DEVELOPMENT_TEAM = DAP856JGQY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jattersley.The-Woof-Library";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD03D6162B8615D0000867FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Woof Library/Preview Content\"";
+				DEVELOPMENT_TEAM = DAP856JGQY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jattersley.The-Woof-Library";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD9EA0E62B8B925600BDD706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DAP856JGQY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jattersley.The-Woof-LibraryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Woof Library.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/The Woof Library";
+			};
+			name = Debug;
+		};
+		DD9EA0E72B8B925600BDD706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DAP856JGQY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jattersley.The-Woof-LibraryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Woof Library.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/The Woof Library";
+			};
+			name = Release;
+		};
+		DD9EA0F82B8B933F00BDD706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DAP856JGQY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jattersley.The-Woof-LibraryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Woof Library";
+			};
+			name = Debug;
+		};
+		DD9EA0F92B8B933F00BDD706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DAP856JGQY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jattersley.The-Woof-LibraryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "The Woof Library";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD03D6012B8615CC000867FA /* Build configuration list for PBXProject "The Woof Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD03D6122B8615D0000867FA /* Debug */,
+				DD03D6132B8615D0000867FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD03D6142B8615D0000867FA /* Build configuration list for PBXNativeTarget "The Woof Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD03D6152B8615D0000867FA /* Debug */,
+				DD03D6162B8615D0000867FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9EA0E52B8B925600BDD706 /* Build configuration list for PBXNativeTarget "The Woof LibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9EA0E62B8B925600BDD706 /* Debug */,
+				DD9EA0E72B8B925600BDD706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9EA0F72B8B933F00BDD706 /* Build configuration list for PBXNativeTarget "The Woof LibraryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9EA0F82B8B933F00BDD706 /* Debug */,
+				DD9EA0F92B8B933F00BDD706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD03D5FE2B8615CC000867FA /* Project object */;
+}

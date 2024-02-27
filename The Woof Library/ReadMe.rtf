@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw12240\paperh15840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \ul \ulc0 The Woof Library - Notes on build.
+\fs28 \ulnone \
+\
+Exercise built in SwiftUI and laid out to an MVVM architecture incorporating Unit and UI tests.\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\sa40\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	1.	}The primary View, ListView, presents a tableView (List) which utilises a URLSession method, defined in Networking, to call the Dog API retrieving the full list of breeds and decoding the JSON return to a Result.type. \
+{\listtext	2.	}The [Result] data is then manipulated by the generateBreedStrings method, contained within Methods, to return a human readable dog breed and store within a new variable breedStrings. \
+{\listtext	3.	}ForEach is then called to to iterate over each item in breedStrings to generate a NavigationLink table cell with the string used as it's label and destination as a DogView initialised upon tap with the breedString applicable to the selected cell.\
+{\listtext	4.	}The List is searchable using using the in built .searchable method, generating a search textField below the navBar.\
+{\listtext	5.	}Search functionality is handled by a computed variable filtering the previously generated breedStrings array by the characters input by the user in the searchString textfield. I have added an .overlay to customisation the .searchable placeholder.\
+{\listtext	6.	}When a NavigationLink is actioned DogView converted the breedString to a string formatted to use in the network call, this is then added to the remainder of the API URL string and then converted to URL.type for use in URLSession.  \
+{\listtext	7.	}URLSession then retrieves 10 URL string image links from the API. This list is then formatted through the createImageURLs method to return the strings as an array of URLs.\
+{\listtext	8.	}The list of URLs is passed to ImageView where each URL is loaded via AsyncImage to a cell of predefined size which is then returned and laid out in the DogView grid.\
+{\listtext	9.	}I have added a feature to display a individual selected image from the grid to fill the screen with a background image. This can be dismissed with a further tap.\
+{\listtext	10.	}The app works in both light and dark mode and is scalable to iPad etc.\
+{\listtext	11.	}The primary methods are tested with Unit test and a 'happy path' flow is tested with a UI test.\
+}
